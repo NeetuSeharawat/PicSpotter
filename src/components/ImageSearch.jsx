@@ -100,12 +100,12 @@ const ImageSearch = () => {
     <div className="image-search">
       <form onSubmit={formSubmitHandler}>
         
-        <input id='search' placeholder='Enter image name here' ref={searchRef}></input>
+        <input id='search' placeholder='Enter image name here' ref={searchRef} className="search-input"></input>
         <button > Search</button>
         
       </form>
 
-      {loading ? (
+      {loading ?(
         <div className="loading">Loading...</div>
       ) : (
         <div className="image-container">
